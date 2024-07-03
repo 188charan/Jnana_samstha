@@ -1,0 +1,14 @@
+{% extends 'repository/base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="jumbotron text-center">
+    <h1 class="display-4">Welcome to the Study Material Repository</h1>
+    <p class="lead">Upload and find study materials easily with our chatbot interface.</p>
+    <hr class="my-4">
+    <p>To get started, you can chat with our bot or upload new study materials.</p>
+    <a class="btn btn-primary btn-lg" href="{% url 'chatbot' %}" role="button">Chat with Bot</a>
+    <a class="btn btn-secondary btn-lg" href="{% url 'upload_material' %}" role="button">Upload Material</a>
+</div>
+{% endblock %}
